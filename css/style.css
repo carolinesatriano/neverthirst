@@ -420,3 +420,92 @@ from {
 	-o-animation-name: fadeInUp;
 	animation-name: fadeInUp;
 }
+
+
+
+
+.box {
+  position: relative;
+  width: 400px;
+  max-width:30%;
+  height: 400px;
+  display: flex;
+  float: left;
+  margin: 200px 0 0 16rem;
+}
+
+.box:hover {
+  transform: scale(1.1);
+}
+
+.box .percent svg {
+  position: relative;
+  width: 350px;
+  height: 350px;
+  transform: rotate(-90deg);
+}
+
+.box .percent svg circle {
+  width: 400px;
+  height: 400px;
+  fill: none;
+  stroke-width: 20;
+  transform: translate(15px, 10px);
+  stroke-dasharray: 600;
+  stroke-dashoffset: 600;
+  stroke-linecap: round;
+
+}
+
+.box .percent svg circle:nth-child(1) {
+  stroke-dashoffset: 0;
+  stroke: #D9F3FF;
+}
+
+.box .percent.job svg circle:nth-child(2) {
+  stroke-dashoffset: calc(600 - (600 * 25) / 100);;
+  stroke: #60CBFF;
+  transition: 0.2s linear;
+}
+
+.box .percent.job svg circle:nth-child(3) {
+  stroke-dashoffset: calc(600 - (600 * 0) / 100);;
+  stroke: #002BB4;
+  transition: 0.2s linear;
+}
+
+.box:hover .percent.job svg circle:nth-child(3) {
+  stroke-dashoffset: calc(600 - (600 * 25) / 100);;
+  stroke: #3664F4;
+}
+
+
+.box .percent .number {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 300;
+  height: 250;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Righteous', sans-serif;
+  color: #3664F4;
+  font-size: 50px;
+}
+
+.box .percent .number p {
+  font-size: 3.4em;
+  margin: 60px 0 0 40px;
+}
+.box .percent .number p span {
+  font-size: 0.5em;
+}
+
+
+
+@media only screen and (max-width: 800px) {
+  .content {
+    flex-direction: column;
+  }
+}

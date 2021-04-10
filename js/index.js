@@ -61,3 +61,11 @@ jQuery(function($) {
       }
     });  
   });
+
+
+
+  var checkBox = document.getElementById("myCheck");
+  const body = document.querySelector("body");
+  checkBox.addEventListener("click", function () {
+    body.classList.toggle("dark");
+  });
