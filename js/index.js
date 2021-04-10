@@ -1,3 +1,5 @@
+/* Caroline Start */
+
 jQuery(function($) {
   
     // Function which adds the 'animated' class to any '.animatable' in view
@@ -67,3 +69,8 @@ jQuery(function($) {
   checkBox.addEventListener("click", function () {
     body.classList.toggle("dark");
   });
+/* Caroline End */
+
+
+/* Caylee Start */
+
