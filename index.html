@@ -5,9 +5,17 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Lato&family=Righteous&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jquery.counterup@2.1.0/jquery.counterup.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.0/jquery.waypoints.min.js"></script>
+
   </head>
 
   <body>
+    <div class="head">
+      <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
+      </div>
+    </div>
     <section class="blue-section">
       <div class="logo">
         <img src="./images/logo-white.svg" alt="never thirst" />
@@ -50,9 +58,10 @@
     </section>
     <section>
       <div class="support">
+        <h2 class="animatable fadeInUp">your support </h2>
         <p class="animatable fadeInUp">
-          your support could change the lives of hundreds. with every dollar you can 
-          see your direct impact through our end of project reports
+          could change the lives of hundreds. see your donation's direct impact 
+          through our end of project reports
         </p>
       </div>
       <div class="container-button">
@@ -71,7 +80,7 @@
       <h4 class="yet animatable fadeInUp">
         yet...
       </h4>
-      <div class="numbers counter" data-count="785000000">0</div>
+      <p><span class="big-num counter">785,000,000</span></p>
       <h4 class="people animatable fadeInUp">
         people lack access to water
       </h4>
@@ -125,7 +134,34 @@
         our impact
       </h2>
     </section>
-    
+    <section>
+      <div class="row">
+        <div class="column" style="background-color:#aaa;">
+          <p class="stats">projects <br /> people served <br /> countries</p>
+        </div>
+        <div class="column" style="background-color:#bbb;">
+          <div class="small-num">
+            <p><span class="counter">17,609</span></p>
+            <p><span class="counter">786,225</span></p>
+            <p><span class="counter">7</span></p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section>
+      <h2>
+        Share
+      </h2>
+      <div class=“share1”>
+        <img src="./images/InstagramBubble.svg" alt="instagram_share" />
+      </div>
+      <div class=“share2">
+        <img src="./images/emailBubble.svg" alt="email_share" />
+      </div>
+      <div class=“share3”>
+        <img src="./images/facebookBubble.svg" alt="facebook_share" />
+      </div>
+    </section>
   </body>
   <script src="./js/index.js"></script>
 </html>

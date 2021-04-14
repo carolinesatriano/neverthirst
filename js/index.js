@@ -1,6 +1,6 @@
 /* Caroline Start */
-
-jQuery(function($) {
+//This is to get the appearing text
+jQuery(document).ready(function($) {
   
     // Function which adds the 'animated' class to any '.animatable' in view
     var doAnimations = function() {
@@ -38,37 +38,37 @@ jQuery(function($) {
       };
     
     // Hook doAnimations on scroll, and trigger a scroll
-      $(window).on('scroll', doAnimations);
+    $(window).on('scroll', doAnimations);
     $(window).trigger('scroll');
+
+    //This is to get the count up for the numbers
+    $("span.counter").counterUp({
+        delay: 40, /* The delay in milliseconds per number count up */
+        time: 1000, /*The total duration of the count up animation */
+        offset: 100, 
+        /*The viewport percentile from which the counter starts (by default it's 100, meaning it's triggered at the very moment the element enters the viewport) */
+    });
   
   });
 
-  $('.counter').each(function() {
-    var $this = $(this),
-        countTo = $this.attr('data-count');
-    
-    $({ countNum: $this.text()}).animate({
-      countNum: countTo
-    },
-  
-    {
-      duration: 2000,
-      easing:'linear',
-      step: function() {
-        $this.text(Math.floor(this.countNum));
-      },
-      complete: function() {
-        $this.text(this.countNum);
-        //alert('finished');
-      }
-    });  
-  });
-
-  var checkBox = document.getElementById("myCheck");
+//Cant remember what this is for...may need to remove
+  /*var checkBox = document.getElementById("myCheck");
   const body = document.querySelector("body");
   checkBox.addEventListener("click", function () {
     body.classList.toggle("dark");
-  });
+  });*/
+
+//This is for the water drop scroll progress
+function progressBarScroll() {
+    let winScroll = document.body.scrollTop || document.documentElement.scrollTop,
+        height = document.documentElement.scrollHeight - document.documentElement.clientHeight,
+        scrolled = (winScroll / height) * 100;
+    document.getElementById("progressBar").style.width = scrolled + "%";
+}
+  
+window.onscroll = function () {
+    progressBarScroll();
+};
 /* Caroline End */
 
 
