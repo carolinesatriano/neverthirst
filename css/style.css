@@ -352,7 +352,6 @@ from {
 }
 
 .animate-out:after {
-  content '';
   letter-spacing: inherit;
 }
 
@@ -601,7 +600,6 @@ from {
  p {
   font-family: 'lato';
   font-size: 24px;
-  margin-left: 50px;
   width: 300px;
   margin-top: -100px;
 }
@@ -629,7 +627,7 @@ h5 {
   width: 466px;
   margin: -150px auto 0px 16rem;
 }
-.bubble3 h5, p {
+.bubble3 h5{
   padding-left: 100px;
 }
 .bubble4 {
@@ -644,5 +642,131 @@ h5 {
   margin-left: -60px;
   margin-top: o;
 }
+.break {
+  height: 400px;
+}
+.solution {
+  margin-right: 16rem;
+}
+div {
+  margin: 175px auto;
+}
 
+.drop {
+  position: relative;
+	width: 20px;
+	height: 20px;
+  top: -30px;
+  margin: 0 auto;
+	background: #3664F4;
+  z-index: -20;
+	-moz-border-radius: 20px;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+  -moz-animation-name: drip;
+  -webkit-animation-name: drip;
+  animation-name: drip;
+  -moz-animation-timing-function: cubic-bezier(1,0,.91,.19);
+  -webkit-animation-timing-function: cubic-bezier(1,0,.91,.19);
+  animation-timing-function: cubic-bezier(1,0,.91,.19);
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.drop:before {
+  content: "";
+  position: absolute;
+  width: 0;
+	height: 0;
+	border-left: 10px solid transparent;
+	border-right: 10px solid transparent;
+	border-bottom: 30px solid rgba(255,255,255,1);
+  top: -22px;
+}
+
+.wave {
+  position: relative;
+  opacity: 0;
+  top: 0;
+	width: 2px;
+	height: 1px;
+  border: #3664F4 7px solid;
+	-moz-border-radius: 300px / 150px;
+	-webkit-border-radius: 300px / 150px;
+	border-radius: 300px / 150px;
+  -moz-animation-name: ripple;
+  -webkit-animation-name: ripple;
+  animation-name: ripple;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.wave:after {
+  content: "";
+  position: absolute;
+  opacity: 0;
+  top: -5px;
+  left: -5px;
+	width: 2px;
+	height: 1px;
+  border: #3664F4 5px solid;
+	-moz-border-radius: 300px / 150px;
+	-webkit-border-radius: 300px / 150px;
+	border-radius: 300px / 150px;
+  -moz-animation-name: ripple-2;
+  -webkit-animation-name: ripple-2;
+  animation-name: ripple-2;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -moz-animation-iteration-count: infinite;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+@keyframes ripple {
+    from {
+      opacity: 1;
+    }
+    to {
+      width: 600px;
+      height: 300px;
+      border-width: 1px;
+      top: -100px;
+      opacity: 0;
+    }
+}
+
+@keyframes ripple-2 {
+    0% {
+      opacity: 1;
+    }
+    50% {
+      opacity: 0;
+    }
+  100% {
+    width: 200px;
+    height: 100px;
+    border-width: 1px;
+    top: 100px;
+    left: 200px;
+  }
+}
+
+@keyframes drip {
+    to {
+      top: 190px;
+    }
+}
 /* Caylee End */
