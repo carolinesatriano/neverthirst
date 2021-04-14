@@ -82,7 +82,7 @@ h1 {
 }
 .and {
   position: absolute;
-  top:0;
+  top:120px;
   left:1060px;
   color: #002BB4;
   font-size: 150px;
@@ -111,6 +111,12 @@ h4 {
   font-size: 96px;
   line-height: 100px;
   margin: auto auto auto 16rem;
+}
+h5 {
+  font-family: 'Righteous', sans-serif;
+  color: #fff;
+  font-size: 35px;
+  line-height: 50px;
 }
 .support {
   position: relative;
@@ -176,9 +182,9 @@ h4 {
 
 
 /* Squiggle */
-a {
+.squiggle a {
   font-weight: 800;
-  color: #60CBFF;
+  color: #60CBFF !important;
   padding-bottom: 15px;
   background: url("../images/wave.svg");
   fill: #60CBFF !important;
@@ -192,14 +198,12 @@ a {
   animation: move 15s linear infinite;
   -webkit-animation: move 15s linear infinite;
   animation-play-state: paused;
-  text-decoration: none;
+  text-decoration: none !important;
   background-color: transparent;
   -webkit-text-decoration-skip: objects;
-}
-
-a:hover {
   animation-play-state: running;
 }
+
 
 
 @-webkit-keyframes move {
@@ -221,11 +225,10 @@ from {
 }
 
 
-
-
 .essential {
   margin-bottom: 300px;
 }
+
 .yet {
   margin-bottom: 40px;
 }
@@ -237,28 +240,32 @@ from {
   color: #3664F4;
   font-size: 96px;
   line-height: 120px;
-  border: 1px solid black;
+  margin: 0px auto 0px 0px;
 }
 .big-num {
   color: #252525;
   font-size: 144px;
   line-height: 100px;
+  margin: 0 0 0 16rem;
 }
-.small-num {
-  border: 1px solid black;
-}
+
 .small-num p {
   color: #252525;
   font-size: 96px;
-  line-height: 20px;
+  line-height: 70px;
+  margin: 35px auto 35px auto;
 }
 /* Create two equal columns that floats next to each other */
-.column {
+.column1 {
   float: left;
   width: 40%;
-  padding: 50px;
+  margin: 50px 0px 50px 16rem;
 }
-
+.column2 {
+  float: left;
+  width: 25%;
+  margin: 50px 16rem 50px 65px;
+}
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -416,7 +423,7 @@ from {
 }
 
 .animate-out:after {
-  content '';
+  content: '';
   letter-spacing: inherit;
 }
 
@@ -568,6 +575,154 @@ from {
   }
 }
 
+
+/* Footer */
+.site-footer {
+  background-color:#3664F4;
+  padding:45px 0 20px;
+  font-size:20px;
+  line-height:36px;
+  color:#fff;
+  font-family: 'Lato', sans-serif;
+  margin-top: 50px;
+}
+.site-footer p {
+  font-size:18px;
+  line-height:22px;
+  width: 450px;
+}
+.site-footer hr {
+  border-top-color:#fff;
+  opacity:0.5
+}
+.site-footer hr.small {
+  margin:20px 0
+}
+.site-footer h6 {
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+.site-footer a {
+  color:#fff;
+}
+.site-footer a:hover {
+  color:#ff7c1f;
+  text-decoration:none;
+}
+.footer-links {
+  padding-left:0;
+  list-style:none
+}
+.footer-links li {
+  display:block
+}
+.footer-links a {
+  color:#fff
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover {
+  color:#ff7c1f;
+  text-decoration:none;
+}
+.footer-links.inline li {
+  display:inline-block
+}
+.site-footer .social-icons {
+  text-align:right
+}
+.site-footer .social-icons a {
+  width:40px;
+  height:40px;
+  line-height:40px;
+  margin-left:6px;
+  margin-right:0;
+  border-radius:100%;
+  background-color:#33353d
+}
+.copyright-text {
+  margin:0
+}
+@media (max-width:991px) {
+  .site-footer [class^=col-]
+  {
+    margin-bottom:30px
+  }
+}
+@media (max-width:767px) {
+  .site-footer
+  {
+    padding-bottom:0
+  }
+  .site-footer .copyright-text,.site-footer .social-icons
+  {
+    text-align:center
+  }
+}
+.social-icons {
+  padding-left:0;
+  margin-bottom:0;
+  list-style:none
+}
+.social-icons li {
+  display:inline-block;
+  margin-bottom:4px
+}
+.social-icons li.title {
+  margin-right:15px;
+  text-transform:uppercase;
+  color:#fff;
+  font-weight:700;
+  font-size:13px
+}
+.social-icons a {
+  background-color:#eceeef;
+  color:#fff;
+  font-size:16px;
+  display:inline-block;
+  line-height:44px;
+  width:44px;
+  height:44px;
+  text-align:center;
+  margin-right:8px;
+  border-radius:100%;
+  -webkit-transition:all .2s linear;
+  -o-transition:all .2s linear;
+  transition:all .2s linear
+}
+.social-icons a:active,.social-icons a:focus,.social-icons a:hover {
+  color:#fff;
+  background-color:#29aafe
+}
+.social-icons.size-sm a {
+  line-height:34px;
+  height:34px;
+  width:34px;
+  font-size:14px
+}
+.social-icons a.facebook:hover {
+  background-color:#3b5998
+}
+.social-icons a.twitter:hover {
+  background-color:#00aced
+}
+.social-icons a.instagram:hover {
+  background-color:#dd2a7b
+}
+.social-icons a.email:hover {
+  background-color:#8134af
+}
+@media (max-width:767px) {
+  .social-icons li.title
+  {
+    display:block;
+    margin-right:0;
+    font-weight:600
+  }
+}
+
+​
 /* Caroline End */
 
 /* Caylee Start */
