@@ -819,7 +819,7 @@ from {
   margin-top: 25px;
 }
 
-h5 {
+#accessBubbles h5 {
   font-family: 'Righteous', sans-serif;
   color: #002BB4;
   font-size: 64px;
@@ -827,11 +827,10 @@ h5 {
   margin-top: -180px;
   margin-left: 30px;
 }
-h6 {
+#accessBubbles h6 {
   font-family: 'lato', sans-serif;
   font-size: 24px;
   width: 300px;
-  margin-top: -100px;
 }
 .bubble2 {
   width: 466px;
@@ -843,12 +842,13 @@ h6 {
 }
 .bubble2 h6 {
   margin-left: 28px;
+  margin-top: -100px;
 }
 .bubble3 {
   width: 466px;
   margin: -150px auto 0px 16rem;
 }
-.bubble3 h5{
+.bubble3 h5 {
   padding-left: 100px;
 }
 .bubble3 h6{
@@ -865,14 +865,8 @@ h6 {
 }
 .bubble4 h6 {
   margin-left: 28px;
+  margin-top: -100px;
 }
-.break {
-  height: 400px;
-}
-.solution {
-  margin-right: 16rem;
-}
-
 
 /* Caylee End */
 
