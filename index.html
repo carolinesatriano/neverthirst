@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
 
     <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/main.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Aclonica&family=Lato&family=Righteous&display=swap" rel="stylesheet">
@@ -70,7 +71,7 @@
       <div class="support">
         <h2 class="animatable fadeInUp">your support </h2>
         <p class="animatable fadeInUp">
-          could change the lives of hundreds. see your donation's direct impact 
+          could change the lives of hundreds. see your donation's <span style="color: #3664F4">direct impact</span> 
           through our end of project reports
         </p>
       </div>
@@ -94,29 +95,31 @@
       <h4 class="people animatable fadeInUp">
         people lack access to water
       </h4>
-
-      <div class="">
-        <div class="box">
-          <div class="percent job">
-            <svg>
-              <circle cx="160" cy="160" r="160"></circle>
-              <circle cx="160" cy="160" r="160"></circle>
-              <circle cx="160" cy="160" r="160"></circle>
-            </svg>
-            <div class="number">
-              <p>80<span>%</span></p>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
+    </section>
+    <section class="svg-container">
+      <svg class="radial-progress" data-countervalue="80" viewBox="0 0 80 80">
+          <circle class="bar-static" cx="40" cy="40" r="35"></circle>
+          <circle class="bar--animated" cx="40" cy="40" r="35" style="stroke-dashoffset: 217.8;"></circle>
+          <text class="countervalue start" x="50%" y="57%" transform="matrix(0, 1, -1, 0, 80, 0)">80</text>
+      </svg>
       <p class="isolated animatable fadeInUp">
-        of those who needs clean water live in isolated communities 
+        of those who need clean water live in isolated communities 
       </p>
+    </section>
+    <section>
       <div class="map">
         <img src="./images/map.svg" alt="global map" />
       </div>
+      <p class="locations animatable fadeInUp">
+        we are currently making an impact in 
+        <span style="color: #3664F4">chad,</span>
+        <span style="color: #3664F4">dr congo,</span>
+        <span style="color: #3664F4">uganda,</span>
+        <span style="color: #3664F4">ethiopia,</span>
+        <span style="color: #3664F4">india,</span> 
+        <span style="color: #3664F4">nepal,</span>and
+        <span style="color: #3664F4">cambodia</span> 
+      </p>
     </section>
     <section>
       <h3 class="changes animatable fadeInUp squiggle">
@@ -185,6 +188,171 @@
             <p><span class="counter">7</span></p>
           </div>
         </div>
+      </div>
+    </section>
+
+
+
+
+
+    <div class="donate">
+      <button class="donate-button">Donate</button>
+      <form name="donAmount" id="donAmount">
+        <input type="radio" value="3" name="amount" id="three">
+        <label for="three">$3</label>
+        <input type="radio" value="25" name="amount" id="twentyfive">
+        <label for="twentyfive">$25</label>
+        <input type="radio" value="100" name="amount" id="hundred">
+        <label for="hundred">$100</label>
+        <input type="radio" value="other" name="amount" id="other">
+        <label for="other">Other</label>
+      </form>
+      </div>
+      
+      <div id="custom">
+        <h2>Donation Amount</h2>
+        <form name="customDonation" id="customDonation">
+        <div class="input-group-1">
+          <label for="custom-amount">$</label>
+          <input id="custom-amount" name="custom-amount" type="text">
+          <div class="warn"></div>
+        </div>
+        </form>
+        <div class="clearfix">
+          <button class="back" type="button">Back
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <button class="next" type="button">Next</button>
+        </div>
+      </div>
+      
+      <section id="details">
+        <div class="contact-info">
+        <h2>Basic Information</h2>
+        <form class="clearfix">
+          <div class="input-group-2">
+          <label>First Name</label>
+          <input type="text">
+          </div>
+          <div class="input-group-2">
+          <label>Last Name</label>
+          <input type="text">
+          </div>
+          <div class="input-group-1">
+          <label>Email Address</label>
+          <input type="text">
+          </div>
+          <hr>
+          <div class="input-group-1">
+          <label>Street Address</label>
+          <input type="text">
+          </div>
+          <div class="input-group-3">
+          <label>City</label>
+          <input type="text">
+          </div>
+          <div class="input-group-3">
+          <label>State</label>
+          <input type="text">
+          </div>
+          <div class="input-group-3">
+          <label>Zip Code</label>
+          <input type="text">
+          </div>
+        </form>
+        <div class="clearfix">
+          <button class="back" type="button">Back
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <button class="next" type="button">Next</button>
+        </div>
+        </div>
+      </section>
+      
+      <section id="card">
+          <div class="contact-info">
+        <h2>Payment Information</h2>
+        <form class="clearfix">
+          <div class="input-group-1">
+          <label>Card Number</label>
+          <input type="text">
+          </div>
+          <div class="clearfix">
+          <div class="input-group-2">
+          <label>Expiration Date</label>
+          <input type="text">
+          </div>
+          
+          <div class="input-group-2">
+          <label>Security Code (CVV)</label>
+          <input type="text">
+          </div>
+          </div>
+          <hr>
+          <div class="input-group-1">
+          <label>Employer</label>
+          <input type="text">
+          </div>
+          
+          <div class="input-group-1">
+          <label>Occupation</label>
+          <input type="text">
+          </div>
+        </form>
+        <div class="clearfix">
+          <button class="back" type="button">Back
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+          <button class="next" type="button">Review</button>
+        </div>
+        </div>
+      </section>
+      
+      <section class="processing">
+      <div class="check">
+        <span></span>
+        <div class="mask">
+        </div>
+        <span></span>
+      </div>
+      
+      <div class="outer">
+        <div class="inner">
+        </div>
+        <div class="progress">
+        </div>
+      </div>
+      <span class="message">Processing</span>
+      </section>
+      
+      <section id="check">
+        <h2>Confirm Payment</h2>
+        <p>Please confirm your contribution of</p>
+        <span>$8888</span>
+        <button class="next" type="button">Confirm</button>
+      </section>
+      
+      <section id="confirm">
+        <h2>Thank You!</h2>
+        <p>Your <span class="amount">$25</span> donation will help us reach <strong>570</strong>!</p>
+      </section>
+
+
+
+
+
+    <section>
+      <h4>Subscribe to the Newsletter</h4>
+      <div class="right-indent">
+        <label class="subscribe-label"><i class="orange x1p4 far fa-envelope"></i></label>
+        <input placeholder="youremail@domain.com"/>
+        <button class="subscribe-button">Subscribe Now!</button>
       </div>
     </section>
     <section>

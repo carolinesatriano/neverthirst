@@ -1,4 +1,7 @@
 /* Caroline Start */
+@import "style.sass";
+
+
 body {
   background-color: white;
   max-width: 100%;
@@ -9,6 +12,8 @@ body {
 /* font-family: 'Aclonica', sans-serif;
 font-family: 'Lato', sans-serif;
 font-family: 'Righteous', sans-serif; */
+
+/* Water drop scroll */
 .head {
   position: fixed;
   top: 300px;
@@ -33,11 +38,13 @@ font-family: 'Righteous', sans-serif; */
 .progress-bar {
   background-color: #60CBFF;
   width: 100%;
-  width: 90px;
-  height: 90px;
+  width: 70px;
+  height: 100px;
   transform: rotate(-45deg);
   overflow: hidden;
 }
+/* end */
+/* Hero section */
 .blue-section {
   background: linear-gradient(60deg, #3664F4 0%, #60CBFF 100%);
 }
@@ -130,8 +137,8 @@ h5 {
   color: #60CBFF;
   font-size: 80px;
   line-height: 80px;
-  margin: 0 auto 75px 16rem;
-  width: 1040px;
+  margin: 20px auto 75px 16rem;
+  width: 1300px;
 }
 .button2 {
   border: 1px;  
@@ -171,6 +178,17 @@ h5 {
 }
 .people {
   width: 1000px;
+  margin-bottom: 350px;
+
+}
+.locations {
+  width: 1300px;
+  font-family: 'Righteous', sans-serif;
+  color: #3664F4;
+  font-size: 66px;
+  line-height: 70px;
+  margin: 1000px auto auto 16rem;
+  
 
 }
 .facts-section {
@@ -277,17 +295,21 @@ from {
   color: #60CBFF;
   font-size: 96px;
   line-height: 100px;
-  margin: 400px auto 0 16rem;
+  margin: 0 0 0 650px;
   width: 1000px;
 }
 .map {
   position: absolute;
-  top: 50%;
+  top: 800px;
   left: 50%;
   -ms-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
-   margin: 4050px auto 200px auto;
+  margin: 4050px auto 200px auto;
 }
+.map img {
+  width: 900px;
+}
+
 .changes {
   margin-top: 1100px;
   margin-bottom: 200px;
@@ -493,89 +515,152 @@ from {
 	animation-name: fadeInUp;
 }
 
-.box {
-  position: relative;
-  width: 400px;
-  max-width:30%;
-  height: 400px;
-  display: flex;
+/*cicle*/
+svg.radial-progress{
+  height:auto;
+  max-width:350px;
+  padding:0;
+  transform:rotate(-90deg);
+  width:100%;
+  border-radius:50%;
+  margin-left: 16rem;
   float: left;
-  margin: 200px 0 0 16rem;
 }
-
-.box:hover {
-  transform: scale(1.1);
+section.svg-container svg.radial-progress:nth-child(even) {
+  margin: 0 15px;
 }
-
-.box .percent svg {
-  position: relative;
-  width: 350px;
-  height: 350px;
-  transform: rotate(-90deg);
+svg.radial-progress circle{
+  fill:transparent;stroke:#60CBFF;
 }
-
-.box .percent svg circle {
-  width: 400px;
-  height: 400px;
-  fill: none;
-  stroke-width: 20;
-  transform: translate(15px, 10px);
-  stroke-dasharray: 600;
-  stroke-dashoffset: 600;
-  stroke-linecap: round;
-
+svg.radial-progress circle.bar-static{
+  stroke:#60CBFF!important;
 }
-
-.box .percent svg circle:nth-child(1) {
-  stroke-dashoffset: 0;
-  stroke: #D9F3FF;
+svg.radial-progress circle.bar--animated{
+  stroke-dasharray:219.91148575129;
+  stroke:#3664F4;
+  stroke-dashoffset:219.91148575129;
+  stroke-width:6px;
+  stroke-linecap:round;
 }
-
-.box .percent.job svg circle:nth-child(2) {
-  stroke-dashoffset: calc(600 - (600 * 25) / 100);;
-  stroke: #60CBFF;
-  transition: 0.2s linear;
-}
-
-.box .percent.job svg circle:nth-child(3) {
-  stroke-dashoffset: calc(600 - (600 * 0) / 100);;
-  stroke: #002BB4;
-  transition: 0.2s linear;
-}
-
-.box:hover .percent.job svg circle:nth-child(3) {
-  stroke-dashoffset: calc(600 - (600 * 25) / 100);;
-  stroke: #3664F4;
-}
-
-
-.box .percent .number {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 300;
-  height: 250;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+svg.radial-progress text{
+  fill:#3664F4;
   font-family: 'Righteous', sans-serif;
-  color: #3664F4;
-  font-size: 50px;
-}
-.percent .number p {
-  font-size: 3.4em;
-  margin: 60px 0 0 40px;
-}
-.box .percent .number p span {
-  font-size: 0.5em;
-}
-@media only screen and (max-width: 800px) {
-  .content {
-    flex-direction: column;
-  }
+  font-size:22px;
+  font-weight:700;
+  text-anchor:middle;
 }
 
 
+
+
+/*Subscribe*/
+
+.subscribe-button {
+	background-color:#ff7c1f;
+	border:0;
+	padding:10px 0px;
+	width:90px;
+	color:white;
+	cursor:pointer;
+	position:relative;
+  transition:0.4s all;
+
+  width: 255px;
+  height: 70px;
+  font-family: 'Righteous', sans-serif;
+  font-size: 32px;
+  border-radius: .25em;
+  color: white;
+  margin: 0px 0px -10px -5px !important;
+  
+}
+
+input {
+	border:0;
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.4);
+	padding:10px 20px;
+  width:250px;
+  height:70px;
+  border-radius: .25em;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+	transition: 0.3s width cubic-bezier(0.40, 0, 0.50, 1.30);
+}
+
+
+.subscribe-button:after {
+    content:'';
+    width: 100%;
+    height: 0;
+	position:absolute;
+	top:50%;
+	left:0;
+    background: rgba(255,255,255,0.3);
+    opacity: 0;
+	transition:0.2s all;
+}
+
+.subscribe-button:hover:after{
+	line-height:36px;
+		top:0;
+	 height: 100%;
+    opacity: 1;
+}
+
+.subscribe-button.iconize:hover:after{
+    opacity: 0;
+}
+
+.subscribe-label {
+	border:0;
+	box-shadow: 0px 0px 1px 0px rgba(0,0,0,0.4);
+	padding:10px 13px;
+	vertical-align:middle;
+  background:white;
+  
+  width: 70px;
+  height: 70px;
+  font-size: 32px;
+  border-radius: .25em;
+  margin: -7px -5px 0px 0px !important;
+}
+
+input:focus{
+  width:300px;
+}
+
+.orange{
+	color:#ff7c1f !important;
+}
+
+
+.x1p4{
+	zoom:1.4;
+}
+
+@-moz-keyframes spin { 0% { -moz-transform: rotate(0deg); }
+  100% { -moz-transform: rotate(359deg); } }
+@-webkit-keyframes spin { 0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(359deg); } }
+@-o-keyframes spin { 0% { -o-transform: rotate(0deg); }
+  100% { -o-transform: rotate(359deg); } }
+@-ms-keyframes spin { 0% { -ms-transform: rotate(0deg); }
+  100% { -ms-transform: rotate(359deg); } }
+@keyframes spin { 0% { transform: rotate(0deg); }
+  100% { transform: rotate(359deg); } }
+.ion-loading-a { -webkit-animation-timing-function: steps(8, start); -moz-animation-timing-function: steps(8, start); animation-timing-function: steps(8, start); }
+
+
+.spin{
+	    animation: spin 1s infinite linear;
+}
+
+.iconize{
+	width:60px;
+}
+.right-indent{
+  margin-left: 16rem;
+}
 /* Footer */
 .site-footer {
   background-color:#3664F4;
@@ -721,6 +806,8 @@ from {
     font-weight:600
   }
 }
+
+
 
 ​
 /* Caroline End */
