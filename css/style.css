@@ -182,7 +182,7 @@ h5 {
 
 }
 .locations {
-  width: 1300px;
+  width: 1350px;
   font-family: 'Righteous', sans-serif;
   color: #3664F4;
   font-size: 66px;
@@ -242,7 +242,6 @@ from {
   }
 }
 
-
 .essential {
   margin-bottom: 300px;
 }
@@ -253,6 +252,7 @@ from {
 .counter {
   font-family: 'Righteous', sans-serif;
 }
+
 .stats {
   font-family: 'Righteous', sans-serif;
   color: #3664F4;
@@ -284,8 +284,12 @@ from {
   width: 25%;
   margin: 50px 16rem 50px 65px;
 }
+.stats-row {
+  clear: both;
+  margin: 700px auto 400px auto;
+}
 /* Clear floats after the columns */
-.row:after {
+.stats-row:after {
   content: "";
   display: table;
   clear: both;
@@ -311,13 +315,13 @@ from {
 }
 
 .changes {
-  margin-top: 1100px;
+  margin-top: 400px;
   margin-bottom: 200px;
   width: 1000px;
 }
 .access{
-  margin-top: 500px;
-  margin-bottom: 200px;
+  margin-top: 700px;
+  margin-bottom: 400px;
   width: 1100px;
 }
 .waves {
@@ -555,6 +559,10 @@ svg.radial-progress text{
 
 /*Subscribe*/
 
+.subscribe {
+  margin: 600px auto 600px auto;
+}
+
 .subscribe-button {
 	background-color:#ff7c1f;
 	border:0;
@@ -565,13 +573,14 @@ svg.radial-progress text{
 	position:relative;
   transition:0.4s all;
 
-  width: 255px;
+  width: 400px;
   height: 70px;
   font-family: 'Righteous', sans-serif;
   font-size: 32px;
   border-radius: .25em;
   color: white;
-  margin: 0px 0px -10px -5px !important;
+  top: 4px;
+  margin: auto 0px auto -5px !important;
   
 }
 
@@ -626,7 +635,7 @@ input {
 }
 
 input:focus{
-  width:300px;
+  width:600px;
 }
 
 .orange{
@@ -659,7 +668,7 @@ input:focus{
 	width:60px;
 }
 .right-indent{
-  margin-left: 16rem;
+  margin: 100px auto auto 16rem;
 }
 /* Subscribe */
 .subscribe-container {  
@@ -928,9 +937,16 @@ input:focus{
     font-weight:600
   }
 }
-
-
-
+.solution {
+  margin: 400px 0 200px 0;
+}
+.partner {
+  margin: 150px auto 400px auto;
+  width: 1300px;
+}
+.impact {
+  margin: auto auto 150px 16rem;
+}
 ​
 /* Caroline End */
 
@@ -1039,11 +1055,11 @@ input:focus{
 #accessBubbles h6 {
   font-family: 'lato', sans-serif;
   font-size: 24px;
-  width: 300px;
+  width: 350px;
 }
 .bubble2 {
   width: 466px;
-  margin: -150px 16rem 75px 800px;
+  margin: -150px 16rem 75px auto;
 }
 .bubble2 h5 {
   padding-top: 40px;
@@ -1066,7 +1082,7 @@ input:focus{
 }
 .bubble4 {
   width: 466px;
-  margin: -150px 16rem 75px 800px;
+  margin: -150px 16rem 75px auto;
 }
 .bubble4 h5 {
   padding-top: 40px;
@@ -1083,15 +1099,15 @@ input:focus{
 
 .share1{
   width: 466px;
-  margin: 100px auto 0px 16rem;
+  margin: 150px auto 0px 16rem;
 }
 .share2 {
   width: 466px;
-  margin: -150px 16rem 75px 800px;
+  margin: -150px 16rem 75px auto;
 }
 .share3 {
   width: 466px;
-  margin: -150px auto 0px 16rem;
+  margin: -150px auto 400px 16rem;
 }
 
 /* Jay End */
@@ -1103,8 +1119,8 @@ input:focus{
   background-color: transparent;
   width: 300px;
   height: 200px;
-  margin: 100px auto 0px 16rem;
-  
+  margin: auto auto 0px 16rem;
+  float: left;
   perspective: 1000px; /* Remove this if you don't want the 3D effect */
   
 }
@@ -1123,6 +1139,13 @@ input:focus{
   transform: rotateY(180deg);
 }
 
+.flip-head {
+  font-family: 'Righteous', sans-serif;
+  color: #252525;
+  font-size: 24px;
+  margin-top: 50px;
+}
+
 .flip-box-front,
 .flip-box-back {
   position: absolute;
@@ -1130,8 +1153,6 @@ input:focus{
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-}
-.flip-box-front {
   
 }
 
@@ -1139,19 +1160,23 @@ input:focus{
   transform: rotateY(180deg);
   background-color: #97e3ff;
   width: 300px;
-height: 300px;
-border-radius: 50%;
+  height: 300px;
+  border-radius: 50%;
+  font-family: 'Lato', sans-serif;
+  color: #252525;
+  font-size: 20px;
+  margin-top: 10px;
+  line-height: 25px;
 }
-
 /*flip 1 end*/ 
 
 .flip-box2 {
   background-color: transparent;
   width: 300px;
   height: 200px;
-  margin: -150px 16rem 75px 800px;
   perspective: 1000px; 
-  
+  float: left;
+  margin-left: 150px;
 }
 
 .flip-box-inner2 {
@@ -1174,18 +1199,21 @@ border-radius: 50%;
   height: 100%;
   -webkit-backface-visibility: hidden; /* Safari */
   backface-visibility: hidden;
-}
-
-.flip-box-front2 {
   
 }
+
 
 .flip-box-back2 {
   transform: rotateY(180deg);
   background-color: #97e3ff;
   width: 300px;
-height: 300px;
-border-radius: 50%;
+  height: 300px;
+  border-radius: 50%;
+  font-family: 'Lato', sans-serif;
+  color: #252525;
+  font-size: 20px;
+  line-height: 25px;
+
 }
 
 /*flip 2 end*/ 
@@ -1195,9 +1223,9 @@ border-radius: 50%;
   background-color: transparent;
   width: 300px;
   height: 200px;
-  margin: 150px auto 0px 16rem;
   perspective: 1000px; 
-  
+  float: left;
+  margin-left: 150px;
 }
 
 .flip-box-inner3 {
@@ -1222,16 +1250,17 @@ border-radius: 50%;
   backface-visibility: hidden;
 }
 
-.flip-box-front3 {
-  
-}
 
 .flip-box-back3 {
   transform: rotateY(180deg);
   background-color: #97e3ff;
   width: 300px;
-height: 300px;
-border-radius: 50%;
+  height: 300px;
+  border-radius: 50%;
+  font-family: 'Lato', sans-serif;
+  color: #252525;
+  font-size: 20px;
+  line-height: 25px;
 }
 
 /*flip 3 end*/ 
